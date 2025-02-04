@@ -1,3 +1,21 @@
+let imagesBg = [
+  "url('./assets/bgMenu.webp')",
+  "url('./assets/bgMenu2.webp')",
+  "url('./assets/bgMenu3.webp')",
+];
+let indexMenuBg = 0;
+
+function changeImageBg() {
+  document.body.style.backgroundImage = imagesBg[indexMenuBg];
+  indexMenuBg = (indexMenuBg + 1) % imagesBg.length;
+}
+
+// Exécuter la fonction immédiatement
+changeImageBg();
+
+// Changer l'image toutes les 2 minutes (120000 ms)
+setInterval(changeImageBg, 120000);
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("saisons.json")
     .then((response) => response.json())

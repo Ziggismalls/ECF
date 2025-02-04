@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-image: url("assets/bgMenu.webp");
+  transition: background 1s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,6 +52,15 @@ a {
   align-items: center;
   justify-content: space-evenly;
   gap: 60px;
+}
+.saison-card {
+  transition: 1s ease-out;
+  transform: scale(1);
+}
+
+.saison-card:hover {
+  transition: 1s ease;
+  transform: scale(1.05);
 }
 .btnReturn {
   bottom: 0;
