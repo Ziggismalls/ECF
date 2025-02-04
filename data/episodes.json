@@ -1,0 +1,520 @@
+{
+  "episodes": [
+    {
+      "id": 1,
+      "saison": 1,
+      "episode": 1,
+      "titre": "Winter Is Coming",
+      "resume": "Eddard Stark, seigneur de Winterfell, apprend que Jon Arryn, la Main du Roi, est mort. Le roi Robert Baratheon arrive avec sa cour et lui demande de prendre sa place. De l’autre côté du détroit, Viserys Targaryen marie sa sœur Daenerys à Khal Drogo en échange d'une armée. Bran surprend Jaime et Cersei en plein inceste, et Jaime le pousse du haut d’une tour.",
+      "images": [
+        "./assets/Hwaorang.png",
+        "./assets/Jack.png",
+        "./assets/Kazuya_Mishima.png"
+      ]
+    },
+    {
+      "id": 2,
+      "saison": 1,
+      "episode": 2,
+      "titre": "The Kingsroad",
+      "resume": "Ned part pour Port-Réal avec ses filles Arya et Sansa. Jon Snow quitte Winterfell pour rejoindre la Garde de Nuit. Sur la route, Arya et Joffrey s'affrontent, ce qui conduit à la mort de la louve Lady. Daenerys tente de s’adapter à sa nouvelle vie avec Khal Drogo. À Winterfell, un assassin tente de tuer Bran, mais est stoppé par l’été, le loup de Bran."
+    },
+    {
+      "id": 3,
+      "saison": 1,
+      "episode": 3,
+      "titre": "Lord Snow",
+      "resume": "Ned arrive à Port-Réal et découvre un royaume rongé par les intrigues. Jon Snow peine à s’adapter au Mur et est malmené par les autres recrues. Il finit par se faire des alliés avec l’aide de Tyrion Lannister. Daenerys commence à s’émanciper et défie Viserys. Bran, réveillé de son coma, apprend qu'il est désormais paralysé et doit accepter son nouveau destin."
+    },
+    {
+      "id": 4,
+      "saison": 1,
+      "episode": 4,
+      "titre": "Cripples, Bastards, and Broken Things",
+      "resume": "Tyrion visite le Mur et conseille Jon Snow sur la dure réalité de la Garde de Nuit. Ned enquête sur la mort de Jon Arryn et découvre qu’il s’intéressait aux bâtards de Robert. Daenerys prend de l’assurance et se rebelle contre son frère Viserys, qui perd patience. Bran fait des rêves étranges où il voit un corbeau à trois yeux, annonçant un avenir mystérieux."
+    },
+    {
+      "id": 5,
+      "saison": 1,
+      "episode": 5,
+      "titre": "The Wolf and the Lion",
+      "resume": "Ned découvre que Robert ignore tout de la gestion du royaume. Catelyn capture Tyrion, l’accusant d’avoir tenté de tuer Bran, et l’emmène au château de sa sœur Lysa Arryn. Viserys, humilié par Daenerys et les Dothraki, tente de s'imposer, mais Khal Drogo lui offre une 'couronne' en or fondu, mettant brutalement fin à ses ambitions de reconquérir le trône."
+    },
+    {
+      "id": 6,
+      "saison": 1,
+      "episode": 6,
+      "titre": "A Golden Crown",
+      "resume": "Tyrion est jugé par Lysa Arryn et exige un duel judiciaire pour prouver son innocence. Ned découvre la vérité sur les enfants de Robert : ils sont en réalité issus de l’union incestueuse entre Jaime et Cersei. Daenerys montre qu’elle est la vraie dirigeante des Dothraki en regardant sans crainte la mort de son frère, qui reçoit une couronne en or fondu."
+    },
+    {
+      "id": 7,
+      "saison": 1,
+      "episode": 7,
+      "titre": "You Win or You Die",
+      "resume": "Robert est gravement blessé lors d'une chasse. Ned confronte Cersei sur l’illégitimité de ses enfants et lui conseille de fuir avant que Robert ne meure. Elle refuse et manœuvre en secret. Jon Snow est fait chevalier de la Garde de Nuit. Ned tente d’exposer la vérité, mais est trahi par Littlefinger, qui ordonne son arrestation par les Lannister."
+    },
+    {
+      "id": 8,
+      "saison": 1,
+      "episode": 8,
+      "titre": "The Pointy End",
+      "resume": "Après l’arrestation de Ned, les Lannister prennent le contrôle de Port-Réal. Arya fuit la ville tandis que Sansa est contrainte d’obéir à Joffrey. Au Mur, Jon Snow combat un mort-vivant et découvre le danger au-delà du Mur. Robb lève une armée pour sauver son père et commence sa marche vers le Sud. Drogo est blessé et Daenerys cherche un moyen de le sauver."
+    },
+    {
+      "id": 9,
+      "saison": 1,
+      "episode": 9,
+      "titre": "Baelor",
+      "resume": "Robb capture Jaime Lannister après une bataille. Jon reçoit une épée en récompense de sa bravoure. Ned est contraint d’avouer sa 'trahison' pour sauver Sansa. Alors qu’il pense être gracié, Joffrey ordonne son exécution devant Sansa et Arya. Daenerys tente de sauver Drogo avec l’aide d’une sorcière, mais ses méthodes mystérieuses inquiètent son entourage."
+    },
+    {
+      "id": 10,
+      "saison": 1,
+      "episode": 10,
+      "titre": "Fire and Blood",
+      "resume": "La mort de Ned bouleverse le royaume. Robb est proclamé Roi du Nord. Jon veut quitter la Garde pour le rejoindre, mais est retenu par ses frères d’armes. Daenerys, après avoir perdu Drogo, entre dans un bûcher funéraire avec ses œufs de dragon. À l’aube, elle ressort indemne, entourée de trois dragons nouveau-nés, marquant le début d’une nouvelle ère."
+    },
+    {
+      "id": 1,
+      "saison": 2,
+      "episode": 1,
+      "titre": "The North Remembers",
+      "resume": "Robb Stark fait la guerre contre les Lannister pour venger son père, tandis que Stannis Baratheon, le frère de Robert, prépare sa propre invasion de Westeros. Daenerys traverse le désert et se rend dans la ville de Qarth pour chercher de l’aide. Tyrion Lannister devient la Main du Roi de Joffrey, cherchant à prendre le contrôle de Port-Réal."
+    },
+    {
+      "id": 2,
+      "saison": 2,
+      "episode": 2,
+      "titre": "The Night Lands",
+      "resume": "Jon Snow part en mission pour la Garde de Nuit et commence à découvrir les mystères au-delà du Mur. Tyrion manœuvre à Port-Réal pour affirmer son pouvoir. Daenerys rencontre des habitants de Qarth, dont Xaro Xhoan Daxos, qui l’invite à séjourner dans sa maison. Stannis Baratheon poursuit sa marche vers le Sud avec ses partisans."
+    },
+    {
+      "id": 3,
+      "saison": 2,
+      "episode": 3,
+      "titre": "What Is Dead May Never Die",
+      "resume": "Jon Snow rencontre les Sauvageons au-delà du Mur et fait la connaissance de Ygritte, une jeune femme du peuple libre. Tyrion poursuit son enquête sur les manœuvres des Lannister à Port-Réal. Robb Stark remporte une victoire contre les armées de la Lannister. Theon Greyjoy retourne sur l’île de Pyke, où il retrouve sa famille et leurs intrigues."
+    },
+    {
+      "id": 4,
+      "saison": 2,
+      "episode": 4,
+      "titre": "Garden of Bones",
+      "resume": "Daenerys poursuit son voyage à Qarth, cherchant à sécuriser des alliés pour récupérer son trône. Tyrion se heurte à la résistance des autres membres du conseil royal. Stannis Baratheon se prépare pour l’assaut de Port-Réal. Robb Stark continue de remporter des victoires contre les armées de l’Ouest et rassemble des partisans pour sa guerre."
+    },
+    {
+      "id": 5,
+      "saison": 2,
+      "episode": 5,
+      "titre": "The Prince of Winterfell",
+      "resume": "Robb Stark continue de remporter des victoires sur les Lannister et prend le contrôle de Winterfell. Jon Snow explore les terres au-delà du Mur et rencontre des Sauvageons, dont Ygritte. Tyrion manipule son chemin à travers la cour à Port-Réal pour renforcer sa position. Daenerys commence à comprendre les dangers de ses alliances à Qarth."
+    },
+    {
+      "id": 6,
+      "saison": 2,
+      "episode": 6,
+      "titre": "The Old Gods and the New",
+      "resume": "Le siège de Winterfell s’intensifie. Theon Greyjoy prend Winterfell pour se proclamer seigneur, mais se retrouve bientôt en difficulté. Jon Snow et les Sauvageons avancent vers le Mur. Daenerys commence à voir les vraies intentions des dirigeants de Qarth. Tyrion manœuvre pour affirmer son autorité au sein de la cour royale."
+    },
+    {
+      "id": 7,
+      "saison": 2,
+      "episode": 7,
+      "titre": "A Man Without Honor",
+      "resume": "Jon Snow se retrouve dans un dilemme moral avec les Sauvageons. Tyrion continue de se battre contre les intrigues des Lannister à Port-Réal. Stannis Baratheon prépare son assaut contre Port-Réal. Theon Greyjoy confronte sa propre loyauté après avoir pris Winterfell. Daenerys découvre la vérité sur les dangers à Qarth."
+    },
+    {
+      "id": 8,
+      "saison": 2,
+      "episode": 8,
+      "titre": "The Prince of Winterfell",
+      "resume": "Jon Snow se trouve confronté à Ygritte et aux Sauvageons. Tyrion continue de lutter pour le contrôle de Port-Réal avec son père et son frère. Theon Greyjoy est pris au piège à Winterfell, tandis que Robb Stark poursuit ses guerres contre les Lannister. Daenerys cherche de nouveaux alliés pour ses futures batailles."
+    },
+    {
+      "id": 9,
+      "saison": 2,
+      "episode": 9,
+      "titre": "Blackwater",
+      "resume": "Stannis Baratheon mène un siège de Port-Réal. Tyrion Lannister organise la défense de la ville avec l’aide de ses alliés, notamment les feux grecs. La bataille de la Néra voit Stannis attaquer la capitale avec ses forces navales, mais les forces de Port-Réal, soutenues par l’intervention de la sorcière Melisandre et son feu magique, repoussent l’assaut."
+    },
+    {
+      "id": 10,
+      "saison": 2,
+      "episode": 10,
+      "titre": "Valar Morghulis",
+      "resume": "Après la victoire à Port-Réal, Tyrion perd sa position de Main du Roi. Stannis Baratheon retourne à Dragonstone pour planifier sa prochaine stratégie. Daenerys, après un voyage à Qarth, se rend compte de l’importance de ses dragons dans le futur. Jon Snow et les Sauvageons poursuivent leur expéditions au-delà du Mur, et Theon fait face aux conséquences de ses actes."
+    },
+    {
+      "id": 1,
+      "saison": 3,
+      "episode": 1,
+      "titre": "Valar Dohaeris",
+      "resume": "Jon Snow rejoint les Sauvageons au-delà du Mur et se lie d'amitié avec Mance Rayder, le roi au-delà du Mur. Daenerys, après sa victoire à Qarth, met le cap sur Astapor pour acheter une armée d'esclaves. Tyrion, nouvellement installé en tant que Main du Roi, cherche à naviguer dans les intrigues de la cour de Port-Réal."
+    },
+    {
+      "id": 2,
+      "saison": 3,
+      "episode": 2,
+      "titre": "Dark Wings, Dark Words",
+      "resume": "Bran continue son voyage avec Osha, Rickon et leur loup, tandis qu'ils rencontrent des personnages importants en chemin. Robb Stark fait face à la désobéissance de ses bannermen, ce qui complique sa guerre contre les Lannister. Tyrion manœuvre pour maintenir sa position dans la cour de Joffrey. Daenerys prend un grand risque pour sauver une ville d'esclaves."
+    },
+    {
+      "id": 3,
+      "saison": 3,
+      "episode": 3,
+      "titre": "Walk of Punishment",
+      "resume": "Robb Stark se trouve pris dans un dilemme stratégique alors qu'il essaie de vaincre les Lannister. Tyrion est confronté à la pression du roi Joffrey et de ses alliés. Daenerys achète l'armée des Immaculés à Astapor, prouvant sa valeur en tant que dirigeante. Jon Snow fait ses preuves au sein des Sauvageons tout en restant fidèle à la Garde de Nuit."
+    },
+    {
+      "id": 4,
+      "saison": 3,
+      "episode": 4,
+      "titre": "And Now His Watch Is Ended",
+      "resume": "Jon Snow fait face à un choix difficile entre sa loyauté envers la Garde de Nuit et son nouveau rôle avec les Sauvageons. Tyrion continue de manœuvrer pour renforcer sa position à Port-Réal. Daenerys libère les esclaves d'Astapor et prend le contrôle de l'armée des Immaculés, prouvant son pouvoir de manière spectaculaire."
+    },
+    {
+      "id": 5,
+      "saison": 3,
+      "episode": 5,
+      "titre": "Kissed by Fire",
+      "resume": "Jon Snow et Ygritte continuent leur relation, tandis que Jon est de plus en plus déchiré entre ses devoirs envers la Garde de Nuit et ses nouveaux alliés. Robb Stark connaît des tensions avec ses alliés, notamment la maison Karstark. Tyrion doit gérer l’hostilité grandissante de Joffrey à Port-Réal, tandis que Daenerys prépare ses forces pour libérer d'autres villes d'esclaves."
+    },
+    {
+      "id": 6,
+      "saison": 3,
+      "episode": 6,
+      "titre": "The Climb",
+      "resume": "Jon Snow et les Sauvageons escaladent le Mur, un exploit qui testera leur détermination et leur loyauté. Tyrion se rapproche de Sansa, mais une grande menace pèse sur la cour. Robb Stark continue d’assumer la direction de la guerre, mais son mariage avec une autre que la fille des Frey complique sa position. Daenerys prépare sa prochaine grande étape dans la libération des esclaves."
+    },
+    {
+      "id": 7,
+      "saison": 3,
+      "episode": 7,
+      "titre": "The Bear and the Maiden Fair",
+      "resume": "La guerre de Robb Stark devient de plus en plus complexe, alors qu’il tente d’attirer de nouveaux alliés tout en maintenant son pouvoir. Jon Snow et Ygritte continuent leur relation passionnée, mais des tensions apparaissent avec les Sauvageons. Tyrion se trouve au centre des conflits à Port-Réal, et Daenerys prépare un mouvement stratégique pour ses armées."
+    },
+    {
+      "id": 8,
+      "saison": 3,
+      "episode": 8,
+      "titre": "Second Sons",
+      "resume": "Daenerys poursuit sa campagne pour libérer les esclaves de Slaver’s Bay et rencontre l'armée des Seigneurs Secondaires. Tyrion doit gérer les tensions croissantes avec Joffrey à Port-Réal. Jon Snow fait face à une trahison au sein des Sauvageons. Robb Stark, en guerre contre les Lannister, subit de lourdes pertes, rendant la situation de plus en plus incertaine."
+    },
+    {
+      "id": 9,
+      "saison": 3,
+      "episode": 9,
+      "titre": "The Rains of Castamere",
+      "resume": "Robb Stark subit une trahison dévastatrice lors de la fameuse 'Noces pourpres', où il, sa mère Catelyn et de nombreux bannermen sont massacrés. Daenerys continue de dominer le Sud en libérant la ville de Yunkai. Jon Snow et les Sauvageons se préparent pour un combat à venir. Tyrion est confronté à un nouvel ennemi à Port-Réal, renforçant les tensions à la cour."
+    },
+    {
+      "id": 10,
+      "saison": 3,
+      "episode": 10,
+      "titre": "Mhysa",
+      "resume": "Daenerys fait une entrée triomphale à Yunkai, où elle est accueillie comme une libératrice par les esclaves. Tyrion lutte pour contrôler les intrigues à Port-Réal, tout en étant confronté à l’hostilité croissante de Joffrey. Jon Snow et les Sauvageons se lancent dans une offensive finale contre la Garde de Nuit, alors que des secrets longtemps cachés commencent à émerger."
+    },
+    {
+      "id": 1,
+      "saison": 4,
+      "episode": 1,
+      "titre": "Two Swords",
+      "resume": "La guerre entre les Lannister et les Stark continue. Tyrion Lannister se retrouve face à une nouvelle menace dans la cour de Port-Réal, avec son frère Jaime de retour après sa captivité. Daenerys arrive à Meereen, décidée à libérer les esclaves. Jon Snow est au Mur et doit gérer les tensions avec les Sauvageons, alors que l’attaque du Mur se profile."
+    },
+    {
+      "id": 2,
+      "saison": 4,
+      "episode": 2,
+      "titre": "The Lion and the Rose",
+      "resume": "Joffrey Baratheon se marie avec Margaery Tyrell, mais son règne cruel touche à sa fin lorsqu’il est empoisonné lors de son mariage. Tyrion est accusé à tort de son meurtre. Jon Snow continue de renforcer la Garde de Nuit, tandis que Daenerys prépare ses prochaines étapes pour libérer les autres villes esclavagistes."
+    },
+    {
+      "id": 3,
+      "saison": 4,
+      "episode": 3,
+      "titre": "Breaker of Chains",
+      "resume": "Tyrion est accusé du meurtre de Joffrey, et sa lutte pour sa survie commence à Port-Réal. Daenerys, après avoir pris la ville de Meereen, commence à faire face à des défis pour gouverner. Jon Snow et les hommes de la Garde de Nuit doivent gérer l’afflux des Sauvageons au Mur, mais une grande bataille se profile."
+    },
+    {
+      "id": 4,
+      "saison": 4,
+      "episode": 4,
+      "titre": "Oathkeeper",
+      "resume": "Jaime Lannister, libéré de ses chaînes, tente de reconstruire sa relation avec sa sœur Cersei, mais les tensions demeurent. Jon Snow prend une décision difficile concernant les Sauvageons. Daenerys continue d’étendre son pouvoir tout en faisant face aux défis de gouverner Meereen. Brienne de Tarth et Podrick Payne partent à la recherche des filles Stark."
+    },
+    {
+      "id": 5,
+      "saison": 4,
+      "episode": 5,
+      "titre": "First of His Name",
+      "resume": "Tommen Baratheon, frère de Joffrey, devient roi après la mort de ce dernier. Tyrion est jugé pour le meurtre de Joffrey, et les événements prennent une tournure dramatique. Jon Snow se trouve en mission avec les hommes de la Garde de Nuit. Daenerys commence à douter de ses capacités à gouverner Meereen face aux rébellions."
+    },
+    {
+      "id": 6,
+      "saison": 4,
+      "episode": 6,
+      "titre": "The Laws of Gods and Men",
+      "resume": "Tyrion subit son procès pour le meurtre de Joffrey, avec des accusations montées contre lui. Daenerys fait face à une rébellion à Meereen. Jon Snow et les autres membres de la Garde de Nuit affrontent une nouvelle menace au-delà du Mur. Tyrion prend une décision qui changera sa vie à jamais lors de son procès."
+    },
+    {
+      "id": 7,
+      "saison": 4,
+      "episode": 7,
+      "titre": "Mockingbird",
+      "resume": "Sansa Stark fait face à de nouvelles manipulations de Petyr Baelish, tandis que Tyrion trouve une issue à son procès. Jon Snow apprend de nouvelles informations concernant les Sauvageons et se prépare à des confrontations à venir. Daenerys continue à se débattre avec ses décisions à Meereen, alors que l’histoire de sa conquête se complique."
+    },
+    {
+      "id": 8,
+      "saison": 4,
+      "episode": 8,
+      "titre": "The Mountain and the Viper",
+      "resume": "La lutte pour le trône prend une nouvelle tournure dramatique lorsque Oberyn Martell affronte la Montagne dans un combat à mort. Tyrion fait face à une trahison dévastatrice à Port-Réal. Jon Snow et la Garde de Nuit continuent de lutter contre les Sauvageons au-delà du Mur. Daenerys commence à douter des implications de son pouvoir à Meereen."
+    },
+    {
+      "id": 9,
+      "saison": 4,
+      "episode": 9,
+      "titre": "The Watchers on the Wall",
+      "resume": "La Garde de Nuit doit défendre le Mur contre une invasion massive des Sauvageons. Jon Snow joue un rôle crucial dans la défense de la forteresse, mais les pertes sont lourdes. À Port-Réal, la situation politique est tendue, et Tyrion fait face à un choix qui pourrait marquer la fin de son parcours. Daenerys commence à prendre de grandes décisions pour son avenir."
+    },
+    {
+      "id": 10,
+      "saison": 4,
+      "episode": 10,
+      "titre": "The Children",
+      "resume": "La saison se termine avec une série de bouleversements : Tyrion échappe à une mort certaine grâce à l’intervention de Varys. Jon Snow fait face à une situation catastrophique avec les Sauvageons, mais prend des mesures pour les contrer. Daenerys, après des événements dramatiques à Meereen, fait un choix important concernant son avenir, tandis que Bran Stark fait une découverte mystique au-delà du Mur."
+    },
+    {
+      "id": 1,
+      "saison": 5,
+      "episode": 1,
+      "titre": "The Wars to Come",
+      "resume": "Tyrion Lannister fuit Port-Réal après avoir tué son père, tandis que Varys l’accompagne dans un voyage incertain. Daenerys continue de diriger Meereen, mais se heurte à de nouvelles révoltes. Jon Snow revient au Mur et prend de grandes décisions concernant les Sauvageons. Cersei, à Port-Réal, manœuvre pour renforcer son pouvoir malgré la perte de son fils, le roi Tommen."
+    },
+    {
+      "id": 2,
+      "saison": 5,
+      "episode": 2,
+      "titre": "The House of Black and White",
+      "resume": "Arya Stark arrive à Braavos et cherche la maison des Noirs et Blancs pour poursuivre son entraînement. Jon Snow lutte pour maintenir l'ordre au Mur, alors que les tensions avec les Sauvageons montent. Cersei et Jaime essaient de reprendre le contrôle de la ville de Dorne après l’assassinat de leur frère, Oberyn Martell. Daenerys poursuit sa gouvernance difficile à Meereen."
+    },
+    {
+      "id": 3,
+      "saison": 5,
+      "episode": 3,
+      "titre": "High Sparrow",
+      "resume": "Cersei prend des mesures drastiques pour consolider son pouvoir à Port-Réal en manipulant les Sept. Jon Snow continue de lutter pour unifier la Garde de Nuit avec les Sauvageons. Daenerys fait face à une menace dans la ville de Meereen, alors que Tyrion Lannister, en exil, commence à jouer un rôle clé en aidant à la survie de Daenerys. Arya poursuit son apprentissage à Braavos."
+    },
+    {
+      "id": 4,
+      "saison": 5,
+      "episode": 4,
+      "titre": "Sons of the Harpy",
+      "resume": "Les tensions à Meereen explosent avec l’émergence des 'Sons of the Harpy', un groupe de rebelles qui attaquent les esclaves libérés. Jon Snow continue de renforcer son pouvoir au sein de la Garde de Nuit, mais la loyauté des hommes est mise à l’épreuve. Cersei et Jaime tentent d'étendre leur influence à Dorne, tandis qu'Arya poursuit sa quête de vengeance à Braavos."
+    },
+    {
+      "id": 5,
+      "saison": 5,
+      "episode": 5,
+      "titre": "Kill the Boy",
+      "resume": "Jon Snow prend une décision qui changera le cours des événements au-delà du Mur, en unifiant les Sauvageons avec la Garde de Nuit pour combattre la menace des Marcheurs Blancs. Daenerys fait face à une rébellion à Meereen et à une tentative d’assassinat. Tyrion continue de se faire un nom auprès de Daenerys. Cersei, à Port-Réal, manœuvre pour renforcer son contrôle sur le royaume."
+    },
+    {
+      "id": 6,
+      "saison": 5,
+      "episode": 6,
+      "titre": "Unbowed, Unbent, Unbroken",
+      "resume": "À Dorne, les tensions explosent avec l'assassinat de membres clés de la famille Martell. Cersei et Jaime continuent de manipuler la situation à Port-Réal, mais des forces extérieures menacent leur pouvoir. Jon Snow prend une décision stratégique concernant les Sauvageons. Daenerys prend une mesure radicale à Meereen pour gérer une crise. Arya se rapproche de son objectif de vengeance à Braavos."
+    },
+    {
+      "id": 7,
+      "saison": 5,
+      "episode": 7,
+      "titre": "The Gift",
+      "resume": "Jon Snow continue de faire face aux défis de la Garde de Nuit et des Sauvageons, alors que l'avenir du Mur est incertain. Tyrion Lannister joue un rôle clé dans les intrigues de Daenerys, cherchant à solidifier son pouvoir. Cersei doit faire face à des défis internes à Port-Réal. Arya se rapproche de la réalisation de son but, mais se rend compte que la vengeance a un coût."
+    },
+    {
+      "id": 8,
+      "saison": 5,
+      "episode": 8,
+      "titre": "Hardhome",
+      "resume": "Jon Snow et la Garde de Nuit affrontent une nouvelle menace au-delà du Mur avec une bataille contre les Sauvageons et les Marcheurs Blancs. Daenerys continue de prendre des décisions difficiles pour maintenir son pouvoir à Meereen. Tyrion continue de conseiller Daenerys, tandis qu’Arya fait face à un dilemme moral à Braavos. Les tensions à Port-Réal continuent de croître pour Cersei."
+    },
+    {
+      "id": 9,
+      "saison": 5,
+      "episode": 9,
+      "titre": "The Dance of Dragons",
+      "resume": "La situation à Meereen devient de plus en plus tendue, Daenerys affrontant une crise intérieure avec ses alliés et ses ennemis. Jon Snow doit faire face à la réalité de la guerre contre les Sauvageons et les Marcheurs Blancs, alors que l’alliance avec les Sauvageons devient encore plus cruciale. Tyrion joue un rôle important dans la politique de Daenerys. Cersei se retrouve prise dans un piège qu’elle a contribué à créer."
+    },
+    {
+      "id": 10,
+      "saison": 5,
+      "episode": 10,
+      "titre": "Mother's Mercy",
+      "resume": "Les intrigues politiques à Port-Réal atteignent leur apogée avec Cersei forcée de payer le prix de ses actions. Jon Snow fait face à des trahisons inattendues au sein de la Garde de Nuit. Daenerys, après des rebondissements majeurs à Meereen, prend une décision qui pourrait changer son avenir. Arya prend une décision cruciale à Braavos, et Tyrion est confronté à son propre destin."
+    },
+    {
+      "id": 1,
+      "saison": 6,
+      "episode": 1,
+      "titre": "The Red Woman",
+      "resume": "Jon Snow est mort, mais son corps est retrouvé par ses frères de la Garde de Nuit. À Port-Réal, Cersei et Jaime Lannister essaient de restaurer leur pouvoir après la mort de leur fils, le roi Tommen. Daenerys est capturée par les Dothraki, mais elle ne compte pas se laisser faire. Sansa Stark continue son voyage avec Theon Greyjoy."
+    },
+    {
+      "id": 2,
+      "saison": 6,
+      "episode": 2,
+      "titre": "Home",
+      "resume": "Jon Snow est ressuscité par Melisandre et reprend son rôle à la Garde de Nuit. À Winterfell, Sansa Stark prend une décision stratégique pour reconquérir son domicile. Tyrion Lannister gouverne Meereen en l'absence de Daenerys. Cersei se retrouve confrontée à la situation politique complexe de Port-Réal, où elle cherche à consolider son pouvoir."
+    },
+    {
+      "id": 3,
+      "saison": 6,
+      "episode": 3,
+      "titre": "Oathbreaker",
+      "resume": "Jon Snow prend des mesures drastiques à la Garde de Nuit pour renforcer son autorité, mais ses décisions créent des divisions. Daenerys échappe aux Dothraki et commence à préparer son retour à Westeros. Sansa Stark, avec l’aide de Jon Snow et de Davos Seaworth, prépare une offensive pour reconquérir Winterfell. Tyrion et Varys cherchent à résoudre la crise à Meereen."
+    },
+    {
+      "id": 4,
+      "saison": 6,
+      "episode": 4,
+      "titre": "Book of the Stranger",
+      "resume": "Daenerys réussit à rallier les forces de la ville de Meereen à sa cause, tout en consolidant son pouvoir parmi les Dothraki. Jon Snow et Sansa Stark rencontrent des alliés et préparent une guerre contre les Bolton. Tyrion continue de gouverner Meereen tout en tentant de maintenir la paix. Cersei et Jaime s’adaptent aux défis politiques à Port-Réal, où les ennemis se multiplient."
+    },
+    {
+      "id": 5,
+      "saison": 6,
+      "episode": 5,
+      "titre": "The Door",
+      "resume": "Jon Snow et Sansa Stark cherchent à recruter des alliés pour leur guerre contre les Bolton, tandis que Daenerys forme une alliance puissante. Tyrion prend des mesures pour maintenir la paix à Meereen, mais la situation est de plus en plus instable. Bran Stark continue de se rendre compte de ses pouvoirs mystérieux, et Hodor fait un sacrifice tragique qui bouleverse tout Westeros."
+    },
+    {
+      "id": 6,
+      "saison": 6,
+      "episode": 6,
+      "titre": "Blood of My Blood",
+      "resume": "Samwell Tarly retourne chez lui, mais doit faire face aux tensions familiales. Daenerys poursuit ses efforts pour reconquérir Westeros et met en place une alliance avec les Fils de la Harpie. Jon Snow et Sansa Stark rencontrent de nouveaux alliés, tandis que Bran Stark continue de développer ses pouvoirs à travers ses visions. À Port-Réal, Cersei doit gérer les conséquences de ses actes."
+    },
+    {
+      "id": 7,
+      "saison": 6,
+      "episode": 7,
+      "titre": "The Broken Man",
+      "resume": "Jon Snow et Sansa Stark préparent une offensive pour reconquérir Winterfell, mais rencontrent un obstacle imprévu. Arya Stark fait un grand pas en avant dans son entraînement à Braavos. Daenerys prend une grande décision stratégique, alors que Cersei et Jaime cherchent à contrer leurs ennemis à Port-Réal. Bran Stark apprend davantage sur l’histoire cachée du passé de Westeros."
+    },
+    {
+      "id": 8,
+      "saison": 6,
+      "episode": 8,
+      "titre": "No One",
+      "resume": "Arya Stark prend une décision décisive à Braavos, mettant en jeu sa vie et son avenir. Jon Snow, Sansa Stark et Davos Seaworth préparent la bataille pour Winterfell. Daenerys commence à faire de grandes avancées pour libérer Meereen et renforcer ses forces. Cersei prend des mesures draconiennes à Port-Réal pour éliminer ses ennemis, mais les conséquences risquent de tout bouleverser."
+    },
+    {
+      "id": 9,
+      "saison": 6,
+      "episode": 9,
+      "titre": "Battle of the Bastards",
+      "resume": "La bataille décisive pour Winterfell entre Jon Snow et Ramsay Bolton se déroule dans une confrontation épique. Daenerys fait face à un choix crucial pour son avenir en tant que dirigeante. Cersei, de son côté, fait face à de lourdes pertes, mais voit son pouvoir renforcer d’une manière surprenante. La guerre pour le Nord atteint son apogée, tandis que les liens familiaux sont testés de manière extrême."
+    },
+    {
+      "id": 10,
+      "saison": 6,
+      "episode": 10,
+      "titre": "The Winds of Winter",
+      "resume": "La saison se termine avec des événements catastrophiques : Cersei Lannister utilise la ruse pour éliminer ses ennemis à Port-Réal, provoquant une destruction massive. Jon Snow est proclamé roi du Nord après sa victoire contre les Bolton. Daenerys se prépare à traverser la mer pour reconquérir Westeros. Bran Stark découvre un secret bouleversant qui pourrait changer l’histoire de Westeros à jamais."
+    },
+    {
+      "id": 1,
+      "saison": 7,
+      "episode": 1,
+      "titre": "Dragonstone",
+      "resume": "Daenerys Targaryen arrive enfin à Dragonstone et commence à préparer sa conquête de Westeros. Jon Snow, maintenant roi du Nord, cherche des alliés contre la menace des Marcheurs Blancs. Cersei Lannister, à Port-Réal, tente de renforcer son pouvoir et sa position après la mort de ses enfants. Tyrion continue de conseiller Daenerys, tandis qu’Arya fait face à un événement majeur dans son voyage."
+    },
+    {
+      "id": 2,
+      "saison": 7,
+      "episode": 2,
+      "titre": "Stormborn",
+      "resume": "Daenerys prend des mesures pour renforcer son armée, en préparant un plan pour attaquer les Lannister. Jon Snow cherche à convaincre les seigneurs du Nord de l’unir face à la menace des Marcheurs Blancs. Cersei, qui voit son pouvoir menacé, prend des décisions brutales pour consolider son contrôle. Arya Stark continue son voyage vers Winterfell, mais ses retrouvailles avec sa famille prennent une tournure inattendue."
+    },
+    {
+      "id": 3,
+      "saison": 7,
+      "episode": 3,
+      "titre": "The Queen's Justice",
+      "resume": "Daenerys impose ses conditions à ses ennemis, en particulier Cersei, et commence à prendre des décisions drastiques pour gagner la guerre. Jon Snow continue d’unir les différentes factions du Nord, mais il doit faire face à des défis internes. Tyrion Lannister et Daenerys discutent de stratégies militaires, tandis qu’Arya arrive enfin à Winterfell, où des tensions émergent entre elle et sa famille."
+    },
+    {
+      "id": 4,
+      "saison": 7,
+      "episode": 4,
+      "titre": "The Spoils of War",
+      "resume": "Daenerys livre une bataille décisive contre l’armée de Lannister, mais la victoire se solde par une lourde perte. Jon Snow continue d’explorer des alliances avec Daenerys pour lutter contre les Marcheurs Blancs. Cersei, malgré sa victoire à court terme, se trouve confrontée à de nouvelles menaces pour son pouvoir. Arya, de retour à Winterfell, confronte Sansa sur leur passé et leurs choix."
+    },
+    {
+      "id": 5,
+      "saison": 7,
+      "episode": 5,
+      "titre": "Eastwatch",
+      "resume": "Jon Snow et Daenerys concluent un accord pour faire face aux Marcheurs Blancs. Tyrion Lannister, en quête de la meilleure stratégie, commence à douter de certaines décisions. Cersei fait face à des difficultés sur le plan politique, mais trouve de nouvelles alliances. Arya et Sansa continuent à se confronter, alors que Bran Stark commence à dévoiler des secrets importants concernant l’histoire de Westeros."
+    },
+    {
+      "id": 6,
+      "saison": 7,
+      "episode": 6,
+      "titre": "Beyond the Wall",
+      "resume": "Jon Snow et un groupe de braves hommes partent au-delà du Mur pour capturer un Mort-vivant et prouver la menace des Marcheurs Blancs. Daenerys se prépare à attaquer Port-Réal pour enfin renverser Cersei. Cersei, qui semble avoir l’avantage, prend des mesures pour neutraliser ses ennemis. Arya et Sansa sont mises à l’épreuve, tandis que Bran Stark fait une découverte frappante qui changera tout."
+    },
+    {
+      "id": 7,
+      "saison": 7,
+      "episode": 7,
+      "titre": "The Dragon and the Wolf",
+      "resume": "Daenerys, Jon Snow, Cersei et Tyrion se rencontrent pour discuter d’une alliance contre les Marcheurs Blancs. Jon Snow fait une révélation capitale à Daenerys, ce qui change la dynamique de leur relation. Cersei joue un jeu dangereux en manipulant la situation à son avantage. Arya et Sansa unissent leurs forces pour déjouer un complot à Winterfell, tandis que les Marcheurs Blancs, menés par le Roi de la Nuit, se rapprochent de plus en plus."
+    },
+    {
+      "id": 1,
+      "saison": 8,
+      "episode": 1,
+      "titre": "Winterfell",
+      "resume": "Jon Snow et Daenerys arrivent à Winterfell pour préparer la bataille contre les Marcheurs Blancs. Cersei, toujours à Port-Réal, refuse d’aider contre la menace du Nord. Tyrion et Daenerys cherchent à rallier les seigneurs du Nord à leur cause, mais Sansa est sceptique. Bran Stark fait une révélation importante sur son rôle, et Jon Snow fait face à des décisions difficiles concernant son héritage."
+    },
+    {
+      "id": 2,
+      "saison": 8,
+      "episode": 2,
+      "titre": "A Knight of the Seven Kingdoms",
+      "resume": "À Winterfell, les alliés se préparent à la guerre contre les Marcheurs Blancs. Jon Snow se retrouve confronté à la vérité sur ses origines, et Daenerys, inquiète de la loyauté du Nord, essaie de consolider son pouvoir. Tyrion et Jaime cherchent à protéger leurs vies, tandis que les Stark préparent leurs défenses. Le soir avant la bataille, des moments poignants de réconciliation et d'amitié se déroulent entre les personnages principaux."
+    },
+    {
+      "id": 3,
+      "saison": 8,
+      "episode": 3,
+      "titre": "The Long Night",
+      "resume": "La bataille épique contre les Marcheurs Blancs et le Roi de la Nuit se déroule à Winterfell. Les armées du Nord, soutenues par Daenerys et ses dragons, luttent désespérément contre l'armée des morts. Les personnages principaux sont mis à l’épreuve, avec de lourdes pertes. Jon Snow et Daenerys se battent pour survivre, tandis que Bran Stark joue un rôle crucial dans la lutte contre le Roi de la Nuit. La bataille se termine par un sacrifice héroïque."
+    },
+    {
+      "id": 4,
+      "saison": 8,
+      "episode": 4,
+      "titre": "The Last of the Starks",
+      "resume": "Après la victoire contre les Marcheurs Blancs, les survivants pleurent leurs pertes et se préparent à la guerre contre Cersei. Daenerys et Jon Snow, désormais liés par un lourd secret, se préparent à envahir Port-Réal. Les tensions augmentent au sein de l’armée des alliés, avec des désaccords sur la marche à suivre. À Port-Réal, Cersei fortifie ses positions, et Tyrion, malgré son rôle d’émissaire, se retrouve en pleine réflexion sur les choix à venir."
+    },
+    {
+      "id": 5,
+      "saison": 8,
+      "episode": 5,
+      "titre": "The Bells",
+      "resume": "Daenerys attaque Port-Réal avec ses dragons, mais les événements prennent une tournure dévastatrice. Après avoir détruit une partie de la ville, Daenerys perd son calme et prend une décision impitoyable qui a de lourdes conséquences pour la ville et ses habitants. Jon Snow se retrouve face à un dilemme moral, tandis que Tyrion et Varys se retrouvent en conflit sur la direction à prendre. La loyauté est mise à l'épreuve et les répercussions se font sentir pour tout Westeros."
+    },
+    {
+      "id": 6,
+      "saison": 8,
+      "episode": 6,
+      "titre": "The Iron Throne",
+      "resume": "La bataille pour le trône de fer atteint son apogée avec une confrontation finale entre Jon Snow et Daenerys. Après la destruction de Port-Réal, les survivants de Westeros doivent décider du futur du royaume. Jon Snow, face à un choix déchirant, prend une décision qui changera à jamais l’histoire de Westeros. Le destin des personnages principaux se dévoile dans un final où les conséquences de leurs actions passées sont pleinement assumées, et où la paix est enfin instaurée."
+    }
+  ]
+}

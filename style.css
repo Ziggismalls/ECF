@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("assets/bgMenu.webp");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#episodes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#saisons-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+
+.episode-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 5px solid #ddd;
+  padding: 10px;
+  width: 400px;
+  height: 180px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ddd;
+  background-color: #000000f3;
+  font-size: 2rem;
+}
+.saison-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 475px;
+  height: 700px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000000;
+  font-size: 1.1rem;
+}
+
+.saison-card::after {
+  z-index: -1;
+  content: "" attr(data-saison);
+  position: absolute;
+  left: -50px;
+  bottom: -29px;
+  font-size: 10em;
+  color: rgb(0, 0, 0);
+}
+.saison-card:hover::after {
+  transition: color 0.3s ease;
+  color: #ddddddc7;
+}
+.saison-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  background: white;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+}
+#modal-title {
+  text-transform: uppercase;
+}
+#modal-resume {
+  line-height: 1.5rem;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel img {
+  border-radius: 5px;
+  width: 700px;
+  height: 465px;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #0000001c;
+}
+
+h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: #ddd;
+  padding: 50px 20px 30px 20px;
+}
+
+/* Taille pour Iphone 14 pro  */
+
+@media (width <= 430px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 100%;
+  }
+
+  #episodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  #saisons-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .episode-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 5px solid #ddd;
+    padding: 10px;
+    width: 230px;
+    color: #ddd;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000f3;
+    font-size: 1.1rem;
+  }
+  .saison-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    height: 370px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .saison-card::after {
+    content: attr(data-saison);
+    position: absolute;
+    z-index: -1;
+    left: -15px;
+    bottom: -8px;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+  }
+
+  .saison-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  #modal-title {
+    text-transform: uppercase;
+  }
+  #modal-resume {
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .carousel img {
+    width: 280px;
+    height: 169px;
+  }
+
+  button {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #0000001c;
+  }
+  h1 {
+    padding: 50px 20px 30px 20px;
+  }
+}
+
+/* Taille pour Ipad Mini  */
+
+@media (width > 430px) and (width < 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100%;
+  }
+
+  #episodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  #saisons-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .episode-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 5px solid #ddd;
+    padding: 10px;
+    width: 230px;
+    height: 80px;
+    color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000f3;
+    font-size: 1.1rem;
+  }
+  .saison-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    height: 370px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    font-size: 1.1rem;
+  }
+  .saison-card::after {
+    content: attr(data-saison);
+    z-index: -1;
+    position: absolute;
+    left: -50px;
+    bottom: -29px;
+    font-size: 10em;
+    color: rgb(0, 0, 0);
+  }
+  .saison-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  #modal-title {
+    text-transform: uppercase;
+  }
+  #modal-resume {
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .carousel img {
+    width: 280px;
+    height: 169px;
+  }
+
+  button {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #0000001c;
+  }
+
+  h1 {
+    padding: 50px 20px 30px 20px;
+  }
+}
+
+/* Taille pour Ipad Pro  */
+
+@media (width>768px) and (width < 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  #episodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  #saisons-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .episode-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border: 5px solid #ddd;
+    padding: 10px;
+    width: 230px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ddd;
+    background-color: #000000f3;
+    font-size: 1.1rem;
+  }
+  .saison-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    height: 370px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    font-size: 1.1rem;
+  }
+  .saison-card::after {
+    content: attr(data-saison);
+    z-index: -1;
+    position: absolute;
+    left: -50px;
+    bottom: -29px;
+    font-size: 10em;
+    color: rgb(0, 0, 0);
+  }
+
+  .saison-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  #modal-title {
+    text-transform: uppercase;
+  }
+  #modal-resume {
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .carousel img {
+    width: 280px;
+    height: 169px;
+  }
+
+  button {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #0000001c;
+  }
+  h1 {
+    padding: 50px 20px 30px 20px;
+  }
+}
