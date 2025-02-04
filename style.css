@@ -4,16 +4,42 @@
 }
 body {
   background-image: url("assets/bgMenu.webp");
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #000000;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #episodes-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,6 +52,18 @@ body {
   align-items: center;
   justify-content: space-evenly;
   gap: 60px;
+}
+.btnReturn {
+  bottom: 0;
+  right: 5%;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("assets/back.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
 }
 
 .episode-card {
@@ -46,7 +84,7 @@ body {
 }
 .saison-card {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
@@ -62,14 +100,14 @@ body {
   z-index: -1;
   content: "" attr(data-saison);
   position: absolute;
-  left: -50px;
-  bottom: -29px;
+  left: -70px;
+  bottom: -39px;
   font-size: 10em;
-  color: rgb(0, 0, 0);
+  color: #dddddda4;
 }
 .saison-card:hover::after {
   transition: color 0.3s ease;
-  color: #ddddddc7;
+  color: #ffffff;
 }
 .saison-card img {
   width: 100%;
@@ -139,11 +177,12 @@ button {
 }
 
 h1 {
+  visibility: hidden;
   font-size: 2.5em;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: #ddd;
-  padding: 50px 20px 30px 20px;
+  padding: 55px 20px;
 }
 
 /* Taille pour Iphone 14 pro  */
@@ -193,7 +232,7 @@ h1 {
   }
   .saison-card {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
@@ -210,10 +249,10 @@ h1 {
     content: attr(data-saison);
     position: absolute;
     z-index: -1;
-    left: -15px;
-    bottom: -8px;
+    left: -20px;
+    bottom: -10px;
     font-size: 3em;
-    color: rgb(0, 0, 0);
+    color: #dddddda4;
   }
 
   .saison-card img {
@@ -282,7 +321,12 @@ h1 {
     background-color: #0000001c;
   }
   h1 {
-    padding: 50px 20px 30px 20px;
+    visibility: hidden;
+    font-size: 2.5em;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #ddd;
+    padding: 55px 20px;
   }
 }
 
@@ -332,7 +376,7 @@ h1 {
   }
   .saison-card {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
@@ -347,10 +391,10 @@ h1 {
     content: attr(data-saison);
     z-index: -1;
     position: absolute;
-    left: -50px;
-    bottom: -29px;
+    left: -70px;
+    bottom: -39px;
     font-size: 10em;
-    color: rgb(0, 0, 0);
+    color: #dddddda4;
   }
   .saison-card img {
     width: 100%;
@@ -419,7 +463,12 @@ h1 {
   }
 
   h1 {
-    padding: 50px 20px 30px 20px;
+    visibility: hidden;
+    font-size: 2.5em;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #ddd;
+    padding: 55px 20px;
   }
 }
 
@@ -468,7 +517,7 @@ h1 {
   }
   .saison-card {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
@@ -483,10 +532,10 @@ h1 {
     content: attr(data-saison);
     z-index: -1;
     position: absolute;
-    left: -50px;
-    bottom: -29px;
+    left: -70px;
+    bottom: -39px;
     font-size: 10em;
-    color: rgb(0, 0, 0);
+    color: #dddddda4;
   }
 
   .saison-card img {
@@ -555,6 +604,11 @@ h1 {
     background-color: #0000001c;
   }
   h1 {
-    padding: 50px 20px 30px 20px;
+    visibility: hidden;
+    font-size: 2.5em;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #ddd;
+    padding: 55px 20px;
   }
 }

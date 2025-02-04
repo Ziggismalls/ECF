@@ -22,27 +22,79 @@ function displaySaisons(saisons) {
     saisonImg.src = saison.image;
     saisonImg.alt = `Image de ${saison.titre}`;
 
+    const saisonBtn = document.getElementById("saisonBtn");
+    h1.innerText = "Liste des Saisons";
+    saisonBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        saisonCard.style.animation = "fadeIn 2s";
+        saisonCard.style.display = "flex";
+        document.body.style.backgroundImage = "url('')";
+        saisonBtn.style.visibility = "hidden";
+        saisonBtn.style.animation = "fadeOut 2s";
+        h1.style.animation = "fadeIn 2s";
+        h1.style.visibility = "visible";
+      }, 1000);
+      saisonBtn.style.animation = "fadeOut 2s";
+    });
     // Ajouter un événement pour afficher les épisodes
     saisonCard.addEventListener("click", () => {
+      containerSaison.style.animation = "fadeOut 2s";
+      h1.style.animation = "fadeOut 2s";
       setTimeout(() => {
+        h1.style.visibility = "hidden";
+        episodeContainer.style.animation = "fadeIn 2s";
         containerSaison.style.display = "none";
         displayEpisodes(saison.episodes);
-      }, 1000);
+      }, 1800);
+      setTimeout(() => {
+        h1.style.animation = "fadeIn 2s";
+        h1.style.visibility = "visible";
+        h1.innerText = "Liste des Episodes";
+      }, 1800);
     });
   });
 }
+let episodeContainer = document.getElementById("episodes-container");
+let h1 = document.querySelector("h1");
 
 function displayEpisodes(episodes) {
   const container = document.getElementById("episodes-container");
   container.innerHTML = ""; // Clear the previous episodes
-
+  let btnReturn = document.createElement("button");
+  container.appendChild(btnReturn);
+  btnReturn.classList.add("btnReturn");
   episodes.forEach((episode) => {
     const episodeCard = document.createElement("div");
     episodeCard.classList.add("episode-card");
     episodeCard.innerHTML = `<h3>${episode.titre}</h3>  Episode ${episode.episode}</p>`;
-
+    episodeContainer.style.display = "flex";
     // Ajouter un événement pour ouvrir le modal avec l'épisode
-    episodeCard.addEventListener("click", () => openModal(episode));
+    episodeCard.addEventListener("click", () => {
+      const episodeModal = document.getElementById("episodeModal");
+      episodeModal.style.animation = "fadeIn 1s";
+      openModal(episode);
+    });
+    btnReturn.addEventListener("click", () => {
+      episodeContainer.style.animation = "fadeOut 2s";
+      h1.style.animation = "fadeOut 2s";
+
+      setTimeout(() => {
+        episodeContainer.style.display = "none";
+        document.getElementById("saisons-container").style.animation =
+          "fadeIn 2s";
+        document.getElementById("saisons-container").style.display = "flex";
+        h1.style.animation = "fadeIn 2s";
+        h1.innerText = "Liste des Saisons";
+      }, 1800);
+    });
+    btnReturn.addEventListener("dblclick", () => {
+      episodeContainer.style.animation = "fadeOut 2s";
+      h1.style.animation = "fadeOut 2s";
+      setTimeout(() => {
+        h1.style.visibility = "hidden";
+        window.location.reload();
+      }, 1700);
+    });
     container.appendChild(episodeCard);
   });
 }
@@ -74,7 +126,10 @@ function openModal(episode) {
   modal.style.display = "flex";
 
   document.querySelector(".close").onclick = () => {
-    modal.style.display = "none";
+    modal.style.animation = "fadeOut 1s";
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 900);
   };
 
   window.onclick = (event) => {
