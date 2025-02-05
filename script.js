@@ -146,6 +146,7 @@ function openModal(episode) {
 
   document.querySelector(".close").onclick = () => {
     modal.style.animation = "fadeOut 1s";
+
     setTimeout(() => {
       episodeContainer.style.display = "flex";
 
