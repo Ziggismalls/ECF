@@ -25,6 +25,8 @@ function displaySaisons(saisons) {
     const saisonBtn = document.getElementById("saisonBtn");
     const accueilBtn = document.getElementById("accueilBtn");
     const footer = document.querySelector("footer");
+    const nav = document.querySelector("nav");
+
     const footerP = document.getElementById("footerP");
     h1.innerText = "Liste des Saisons";
     saisonBtn.addEventListener("click", () => {
@@ -35,11 +37,12 @@ function displaySaisons(saisons) {
         accueilBtn.style.visibility = "hidden";
         h1.style.animation = "fadeIn 1s";
         h1.style.visibility = "visible";
-
+        nav.style.visibility = "hidden";
         footer.style.visibility = "visible";
         footerP.style.visibility = "visible";
-        document.body.classList.add("blurBg");
-      }, 800);
+      }, 500);
+      document.body.classList.add("blurBg");
+      nav.style.animation = "fadeOut 1s";
       accueilBtn.style.animation = "fadeOut 1s";
       saisonBtn.style.animation = "fadeOut 1s";
     });
@@ -90,7 +93,6 @@ function displayEpisodes(episodes) {
     });
     btnReturn.addEventListener("click", () => {
       document.body.classList.add("blurBg");
-
       episodeContainer.style.animation = "fadeOut 1s";
       h1.style.animation = "fadeOut 1s";
 
