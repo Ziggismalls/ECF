@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => console.error("Erreur de chargement du JSON :", error));
 });
 const spansBtn = document.getElementById("spansBtn");
-spansBtn.addEventListener("click", () => {
-  document.getElementById("menuBg").classList.toggle("navBarSlide");
+const menuBg = document.getElementById("menuBg");
+spansBtn.addEventListener("click", (event) => {
+  menuBg.classList.toggle("navBarSlide");
 });
 function displaySaisons(saisons) {
   const containerSaison = document.getElementById("saisons-container");
@@ -41,12 +42,15 @@ function displaySaisons(saisons) {
         footer.style.visibility = "visible";
         footerP.style.visibility = "visible";
       }, 500);
-      document.getElementById("menuBg").classList.add("navBarSlide2");
+      menuBg.classList.remove("navBarSlide");
       document.body.classList.add("blurBg");
     });
 
     accueilBtn.addEventListener("click", () => {
-      window.location.reload();
+      menuBg.classList.remove("navBarSlide");
+      setTimeout(() => {
+        window.location.reload();
+      }, 900);
     });
 
     // Ajouter un événement pour afficher les épisodes

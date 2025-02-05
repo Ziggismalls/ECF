@@ -33,9 +33,7 @@ nav {
   background-color: #000000cb;
   height: 50px;
 }
-.navBarContainer {
-  width: 100%;
-}
+
 input {
   visibility: hidden;
 }
