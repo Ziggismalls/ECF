@@ -1,21 +1,3 @@
-let imagesBg = [
-  "url('./assets/bgMenu.webp')",
-  "url('./assets/bgMenu2.webp')",
-  "url('./assets/bgMenu3.webp')",
-];
-let indexMenuBg = 0;
-
-function changeImageBg() {
-  document.body.style.backgroundImage = imagesBg[indexMenuBg];
-  indexMenuBg = (indexMenuBg + 1) % imagesBg.length;
-}
-
-// Exécuter la fonction immédiatement
-changeImageBg();
-
-// Changer l'image toutes les 2 minutes (120000 ms)
-setInterval(changeImageBg, 120000);
-
 document.addEventListener("DOMContentLoaded", () => {
   fetch("saisons.json")
     .then((response) => response.json())
@@ -41,34 +23,48 @@ function displaySaisons(saisons) {
     saisonImg.alt = `Image de ${saison.titre}`;
 
     const saisonBtn = document.getElementById("saisonBtn");
+    const accueilBtn = document.getElementById("accueilBtn");
+    const footer = document.querySelector("footer");
+    const footerP = document.getElementById("footerP");
     h1.innerText = "Liste des Saisons";
     saisonBtn.addEventListener("click", () => {
       setTimeout(() => {
-        saisonCard.style.animation = "fadeIn 2s";
+        saisonCard.style.animation = "fadeIn 1s";
         saisonCard.style.display = "flex";
-        document.body.style.backgroundImage = "url('')";
         saisonBtn.style.visibility = "hidden";
-        saisonBtn.style.animation = "fadeOut 2s";
-        h1.style.animation = "fadeIn 2s";
+        accueilBtn.style.visibility = "hidden";
+        h1.style.animation = "fadeIn 1s";
         h1.style.visibility = "visible";
-      }, 1000);
-      saisonBtn.style.animation = "fadeOut 2s";
+
+        footer.style.visibility = "visible";
+        footerP.style.visibility = "visible";
+        document.body.classList.add("blurBg");
+      }, 800);
+      accueilBtn.style.animation = "fadeOut 1s";
+      saisonBtn.style.animation = "fadeOut 1s";
     });
+
+    accueilBtn.addEventListener("click", () => {
+      window.location.reload();
+    });
+
     // Ajouter un événement pour afficher les épisodes
     saisonCard.addEventListener("click", () => {
-      containerSaison.style.animation = "fadeOut 2s";
-      h1.style.animation = "fadeOut 2s";
+      containerSaison.style.animation = "fadeOut 1s";
+      h1.style.animation = "fadeOut 1s";
+      document.body.classList.add("blurBg");
+
       setTimeout(() => {
         h1.style.visibility = "hidden";
-        episodeContainer.style.animation = "fadeIn 2s";
+        episodeContainer.style.animation = "fadeIn 1s";
         containerSaison.style.display = "none";
         displayEpisodes(saison.episodes);
-      }, 1800);
+      }, 800);
       setTimeout(() => {
-        h1.style.animation = "fadeIn 2s";
+        h1.style.animation = "fadeIn 1s";
         h1.style.visibility = "visible";
         h1.innerText = "Liste des Episodes";
-      }, 1800);
+      }, 800);
     });
   });
 }
@@ -93,25 +89,27 @@ function displayEpisodes(episodes) {
       openModal(episode);
     });
     btnReturn.addEventListener("click", () => {
-      episodeContainer.style.animation = "fadeOut 2s";
-      h1.style.animation = "fadeOut 2s";
+      document.body.classList.add("blurBg");
+
+      episodeContainer.style.animation = "fadeOut 1s";
+      h1.style.animation = "fadeOut 1s";
 
       setTimeout(() => {
         episodeContainer.style.display = "none";
         document.getElementById("saisons-container").style.animation =
-          "fadeIn 2s";
+          "fadeIn 1s";
         document.getElementById("saisons-container").style.display = "flex";
-        h1.style.animation = "fadeIn 2s";
+        h1.style.animation = "fadeIn 1s";
         h1.innerText = "Liste des Saisons";
-      }, 1800);
+      }, 800);
     });
     btnReturn.addEventListener("dblclick", () => {
       episodeContainer.style.animation = "fadeOut 2s";
-      h1.style.animation = "fadeOut 2s";
+      h1.style.animation = "fadeOut 1s";
       setTimeout(() => {
         h1.style.visibility = "hidden";
         window.location.reload();
-      }, 1700);
+      }, 700);
     });
     container.appendChild(episodeCard);
   });

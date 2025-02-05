@@ -1,24 +1,66 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
 }
+
 body {
-  transition: background 1s ease-in-out;
+  background: url("./assets/bgMenu.webp");
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #000000;
-  overflow: hidden;
+  background-color: #000000bd;
+  height: 100%;
+}
+.blurBg {
+  top: 0;
+  backdrop-filter: blur(10px);
+  left: 0;
+}
+nav {
+  background-color: rgba(51, 51, 51, 0); /* Fond semi-transparent */
+  backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 200px;
+}
+footer {
+  visibility: hidden;
+}
+.footerP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f700;
+  font-size: 1.5rem;
+  height: 10vh;
+  width: 100%;
 }
 a {
-  list-style: none;
-  text-decoration: none;
   color: white;
   font-size: 2em;
 }
@@ -45,6 +87,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 #saisons-container {
   width: 100%;
@@ -53,6 +96,7 @@ a {
   align-items: center;
   justify-content: space-evenly;
   gap: 60px;
+  margin-bottom: 30px;
 }
 .saison-card {
   transition: 1s ease-out;
@@ -150,11 +194,11 @@ a {
 }
 #modal-title {
   text-transform: uppercase;
+  font-size: 2.5rem;
 }
 #modal-resume {
-  line-height: 1.5rem;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
 }
 .close {
   position: absolute;
@@ -205,10 +249,10 @@ h1 {
   body {
     font-family: Arial, sans-serif;
     text-align: center;
-    padding-bottom: 50px;
-    height: 100%;
   }
-
+  .footerP {
+    font-size: 0.9rem;
+  }
   #episodes-container {
     display: flex;
     flex-wrap: wrap;
@@ -296,11 +340,10 @@ h1 {
   }
   #modal-title {
     text-transform: uppercase;
+    font-size: 2rem;
   }
   #modal-resume {
-    line-height: 1.5rem;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .close {
     position: absolute;
@@ -350,9 +393,10 @@ h1 {
   body {
     font-family: Arial, sans-serif;
     text-align: center;
-    height: 100%;
   }
-
+  .footerP {
+    font-size: 1.2rem;
+  }
   #episodes-container {
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +408,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 60px;
   }
 
@@ -401,9 +445,9 @@ h1 {
     content: attr(data-saison);
     z-index: -1;
     position: absolute;
-    left: -70px;
-    bottom: -39px;
-    font-size: 10em;
+    left: -40px;
+    bottom: -24px;
+    font-size: 6em;
     color: #dddddda4;
   }
   .saison-card img {
@@ -439,9 +483,7 @@ h1 {
     text-transform: uppercase;
   }
   #modal-resume {
-    line-height: 1.5rem;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .close {
     position: absolute;
@@ -484,7 +526,7 @@ h1 {
 
 /* Taille pour Ipad Pro  */
 
-@media (width>768px) and (width < 1024px) {
+@media (width>768px) and (width <= 1024px) {
   * {
     margin: 0;
     padding: 0;
@@ -492,6 +534,9 @@ h1 {
   body {
     font-family: Arial, sans-serif;
     text-align: center;
+  }
+  .footerP {
+    font-size: 1.2rem;
   }
 
   #episodes-container {
@@ -506,7 +551,6 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 30px;
   }
 
   .episode-card {
@@ -544,7 +588,7 @@ h1 {
     position: absolute;
     left: -70px;
     bottom: -39px;
-    font-size: 10em;
+    font-size: 8em;
     color: #dddddda4;
   }
 
@@ -581,7 +625,6 @@ h1 {
     text-transform: uppercase;
   }
   #modal-resume {
-    line-height: 1.5rem;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
