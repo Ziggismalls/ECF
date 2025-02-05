@@ -200,6 +200,7 @@ a {
 #modal-resume {
   text-align: center;
   font-weight: 400;
+  font-size: 1.2rem;
 }
 .close {
   position: absolute;
@@ -224,6 +225,7 @@ a {
 }
 
 button {
+  font-size: 3em;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -371,10 +373,12 @@ h1 {
     text-align: center;
   }
   #modal-title {
+    padding: 20px;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #modal-resume {
+    font-size: 0.8rem;
     text-align: center;
   }
   .close {
@@ -513,6 +517,7 @@ h1 {
     text-align: center;
   }
   #modal-title {
+    padding: 20px;
     text-transform: uppercase;
   }
   #modal-resume {
@@ -535,12 +540,13 @@ h1 {
   }
 
   .carousel img {
-    width: 280px;
-    height: 169px;
+    width: 400px;
+    height: 266px;
   }
 
   button {
     cursor: pointer;
+    font-size: 1.5em;
     border: none;
     background-color: transparent;
     color: black;
@@ -660,7 +666,6 @@ h1 {
   }
   #modal-resume {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .close {
     position: absolute;
@@ -679,11 +684,12 @@ h1 {
   }
 
   .carousel img {
-    width: 280px;
-    height: 169px;
+    width: 450px;
+    height: 300px;
   }
 
   button {
+    font-size: 2em;
     cursor: pointer;
     border: none;
     background-color: transparent;
