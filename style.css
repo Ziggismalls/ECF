@@ -224,10 +224,10 @@ a {
 
 button {
   cursor: pointer;
-  border: 2px solid transparent;
+  border: none;
+  background-color: transparent;
+  color: black;
   border-radius: 50%;
-  padding: 5px;
-  background-color: #0000001c;
 }
 
 h1 {
@@ -247,8 +247,18 @@ h1 {
     padding: 0;
   }
   body {
+    background: url("./assets/bgMenu.webp");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #000000bd;
+    height: 100%;
   }
   .blurBg {
     top: 0;
@@ -262,6 +272,13 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
   }
   .footerP {
     font-size: 0.9rem;
@@ -341,9 +358,10 @@ h1 {
   }
 
   .modal-content {
+    overflow: scroll;
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: fit-content;
     justify-content: space-evenly;
     border-radius: 5px;
     background: white;
@@ -381,10 +399,10 @@ h1 {
 
   button {
     cursor: pointer;
-    border: 2px solid transparent;
+    border: none;
+    background-color: transparent;
+    color: black;
     border-radius: 50%;
-    padding: 5px;
-    background-color: #0000001c;
   }
   h1 {
     visibility: hidden;
@@ -521,10 +539,10 @@ h1 {
 
   button {
     cursor: pointer;
-    border: 2px solid transparent;
+    border: none;
+    background-color: transparent;
+    color: black;
     border-radius: 50%;
-    padding: 5px;
-    background-color: #0000001c;
   }
 
   h1 {
@@ -664,10 +682,10 @@ h1 {
 
   button {
     cursor: pointer;
-    border: 2px solid transparent;
+    border: none;
+    background-color: transparent;
+    color: black;
     border-radius: 50%;
-    padding: 5px;
-    background-color: #0000001c;
   }
   h1 {
     visibility: hidden;
