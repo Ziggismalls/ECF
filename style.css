@@ -263,6 +263,13 @@ h1 {
     background-color: #000000bd;
     height: 100%;
   }
+  .navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 50px;
+  }
   .blurBg {
     top: 0;
     backdrop-filter: blur(10px);
@@ -270,6 +277,7 @@ h1 {
   }
   nav {
     background-color: rgba(51, 51, 51, 0); /* Fond semi-transparent */
+    -webkit-backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
     backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
     width: 100%;
     position: fixed;
@@ -403,6 +411,7 @@ h1 {
   }
 
   button {
+    font-size: 1em;
     cursor: pointer;
     border: none;
     background-color: transparent;
