@@ -29,10 +29,17 @@ body {
 nav {
   background-color: rgba(51, 51, 51, 0); /* Fond semi-transparent */
   backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
+  -webkit-backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
 }
 main {
   display: flex;
@@ -40,29 +47,22 @@ main {
   justify-content: center;
   flex-direction: column;
   min-height: 90vh;
-}
-.navBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  gap: 200px;
+  padding: 40px;
 }
 footer {
   visibility: hidden;
+  padding: 20px;
 }
 .footerP {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f700;
-  font-size: 1.5rem;
   height: 10vh;
   width: 100%;
 }
 a {
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 @keyframes fadeIn {
   0% {
@@ -81,24 +81,29 @@ a {
   }
 }
 
-#episodes-container {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+#episodes-container,
 #saisons-container {
+  position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 60px;
+  gap: 20px;
   margin-bottom: 30px;
 }
 .saison-card {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 250px;
+  height: 370px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000000;
+  font-size: 2rem;
   transition: 1s ease-out;
   transform: scale(1);
 }
@@ -107,56 +112,14 @@ a {
   transition: 1s ease;
   transform: scale(1.05);
 }
-.btnReturn {
-  bottom: 0;
-  right: 5%;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-image: url("assets/back.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-color: #000000;
-}
-
-.episode-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  border: 5px solid #ddd;
-  padding: 10px;
-  width: 400px;
-  height: 180px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #ddd;
-  background-color: #000000f3;
-  font-size: 2rem;
-}
-.saison-card {
-  position: relative;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  width: 475px;
-  height: 700px;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #000000;
-  font-size: 1.1rem;
-}
 
 .saison-card::after {
   z-index: -1;
   content: "" attr(data-saison);
   position: absolute;
-  left: -70px;
-  bottom: -39px;
-  font-size: 10em;
+  left: -25px;
+  bottom: -15px;
+  font-size: 2em;
   color: #dddddda4;
 }
 .saison-card:hover::after {
@@ -168,8 +131,37 @@ a {
   height: 100%;
   border-radius: 5px;
 }
+.episode-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 5px solid #ddd;
+  padding: 10px;
+  width: 400px;
+  height: 160px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ddd;
+  background-color: #000000f3;
+  font-size: 1.2rem;
+}
+.btnReturn {
+  bottom: -40px;
+  right: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("assets/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-color: #0000005b;
+}
 
 .modal {
+  overflow: hidden;
   display: none;
   position: fixed;
   top: 0;
@@ -195,18 +187,18 @@ a {
 }
 #modal-title {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 #modal-resume {
   text-align: center;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 200;
+  font-size: 1rem;
 }
 .close {
   position: absolute;
-  right: 10px;
-  top: -10px;
-  font-size: 50px;
+  right: 5px;
+  top: -5px;
+  font-size: 30px;
   cursor: pointer;
   color: rgb(0, 0, 0);
 }
@@ -220,12 +212,12 @@ a {
 
 .carousel img {
   border-radius: 5px;
-  width: 700px;
-  height: 465px;
+  width: 300px;
+  height: 200px;
 }
 
 button {
-  font-size: 3em;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -235,482 +227,9 @@ button {
 
 h1 {
   visibility: hidden;
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
-  color: #ddd;
+  color: #000000;
   padding: 55px 20px;
-}
-
-/* Taille pour Iphone 14 pro  */
-
-@media (width <= 430px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background: url("./assets/bgMenu.webp");
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #000000bd;
-    height: 100%;
-  }
-  .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    gap: 50px;
-  }
-  .blurBg {
-    top: 0;
-    backdrop-filter: blur(10px);
-    left: 0;
-  }
-  nav {
-    background-color: rgba(51, 51, 51, 0); /* Fond semi-transparent */
-    -webkit-backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
-    backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 90vh;
-  }
-  .footerP {
-    font-size: 0.9rem;
-  }
-  #episodes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  #saisons-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .episode-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    border: 5px solid #ddd;
-    padding: 10px;
-    width: 230px;
-    color: #ddd;
-    height: 80px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #000000f3;
-    font-size: 1.1rem;
-  }
-  .saison-card {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 250px;
-    height: 370px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #f8f8f8;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .saison-card::after {
-    content: attr(data-saison);
-    position: absolute;
-    z-index: -1;
-    left: -20px;
-    bottom: -10px;
-    font-size: 3em;
-    color: #dddddda4;
-  }
-
-  .saison-card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    background: white;
-    padding: 20px;
-    width: 80%;
-    text-align: center;
-  }
-  #modal-title {
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 1rem;
-  }
-  #modal-resume {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .close {
-    position: absolute;
-    right: 10px;
-    top: -10px;
-    font-size: 50px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-  }
-
-  .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .carousel img {
-    width: 280px;
-    height: 169px;
-  }
-
-  button {
-    font-size: 1em;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: black;
-    border-radius: 50%;
-  }
-  h1 {
-    visibility: hidden;
-    font-size: 2.5em;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    color: #ddd;
-    padding: 55px 20px;
-  }
-}
-
-/* Taille pour Ipad Mini  */
-
-@media (width > 430px) and (width <= 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  .footerP {
-    font-size: 1.2rem;
-  }
-  #episodes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  #saisons-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 60px;
-  }
-
-  .episode-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    border: 5px solid #ddd;
-    padding: 10px;
-    width: 230px;
-    height: 80px;
-    color: #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #000000f3;
-    font-size: 1.1rem;
-  }
-  .saison-card {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 250px;
-    height: 370px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #f8f8f8;
-    font-size: 1.1rem;
-  }
-  .saison-card::after {
-    content: attr(data-saison);
-    z-index: -1;
-    position: absolute;
-    left: -40px;
-    bottom: -24px;
-    font-size: 6em;
-    color: #dddddda4;
-  }
-  .saison-card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    background: white;
-    padding: 20px;
-    width: 80%;
-    text-align: center;
-  }
-  #modal-title {
-    padding: 20px;
-    text-transform: uppercase;
-  }
-  #modal-resume {
-    text-align: center;
-  }
-  .close {
-    position: absolute;
-    right: 10px;
-    top: -10px;
-    font-size: 50px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-  }
-
-  .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .carousel img {
-    width: 400px;
-    height: 266px;
-  }
-
-  button {
-    cursor: pointer;
-    font-size: 1.5em;
-    border: none;
-    background-color: transparent;
-    color: black;
-    border-radius: 50%;
-  }
-
-  h1 {
-    visibility: hidden;
-    font-size: 2.5em;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    color: #ddd;
-    padding: 55px 20px;
-  }
-}
-
-/* Taille pour Ipad Pro  */
-
-@media (width>768px) and (width <= 1024px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  .footerP {
-    font-size: 1.2rem;
-  }
-
-  #episodes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  #saisons-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .episode-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    border: 5px solid #ddd;
-    padding: 10px;
-    width: 230px;
-    height: 80px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ddd;
-    background-color: #000000f3;
-    font-size: 1.1rem;
-  }
-  .saison-card {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 250px;
-    height: 370px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #f8f8f8;
-    font-size: 1.1rem;
-  }
-  .saison-card::after {
-    content: attr(data-saison);
-    z-index: -1;
-    position: absolute;
-    left: -70px;
-    bottom: -39px;
-    font-size: 8em;
-    color: #dddddda4;
-  }
-
-  .saison-card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    height: 70%;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    background: white;
-    padding: 20px;
-    width: 80%;
-    text-align: center;
-  }
-  #modal-title {
-    text-transform: uppercase;
-  }
-  #modal-resume {
-    text-align: center;
-  }
-  .close {
-    position: absolute;
-    right: 10px;
-    top: -10px;
-    font-size: 50px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-  }
-
-  .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .carousel img {
-    width: 450px;
-    height: 300px;
-  }
-
-  button {
-    font-size: 2em;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: black;
-    border-radius: 50%;
-  }
-  h1 {
-    visibility: hidden;
-    font-size: 2.5em;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    color: #ddd;
-    padding: 55px 20px;
-  }
 }
