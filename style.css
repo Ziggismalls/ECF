@@ -247,7 +247,6 @@ h1 {
     padding: 0;
   }
   body {
-    background: url("./assets/bgMenu.webp");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
