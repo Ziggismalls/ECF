@@ -250,6 +250,19 @@ h1 {
     font-family: Arial, sans-serif;
     text-align: center;
   }
+  .blurBg {
+    top: 0;
+    backdrop-filter: blur(10px);
+    left: 0;
+  }
+  nav {
+    background-color: rgba(51, 51, 51, 0); /* Fond semi-transparent */
+    backdrop-filter: blur(10px); /* Ajoute l'effet de flou */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   .footerP {
     font-size: 0.9rem;
   }
@@ -350,7 +363,7 @@ h1 {
     right: 10px;
     top: 10px;
     font-size: 50px;
-    cursor: pointer;
+    /* cursor: pointer */
     color: white;
   }
 
