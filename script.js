@@ -87,13 +87,19 @@ function displayEpisodes(episodes) {
     episodeCard.addEventListener("click", () => {
       const episodeModal = document.getElementById("episodeModal");
       episodeModal.style.animation = "fadeIn 1s";
-      episodeContainer.style.display = "none";
-      openModal(episode);
+      h1.style.animation = "fadeOut 1s";
+      episodeContainer.style.animation = "fadeOut 1s";
+      setTimeout(() => {
+        h1.style.visibility = "hidden";
+        episodeContainer.style.display = "none";
+        openModal(episode);
+      }, 800);
     });
     btnReturn.addEventListener("click", () => {
       document.body.classList.add("blurBg");
       episodeContainer.style.animation = "fadeOut 1s";
       h1.style.animation = "fadeOut 1s";
+      h1.style.visibility = "hidden";
 
       setTimeout(() => {
         episodeContainer.style.display = "none";
@@ -144,9 +150,11 @@ function openModal(episode) {
 
   document.querySelector(".close").onclick = () => {
     modal.style.animation = "fadeOut 1s";
+    h1.style.animation = "fadeIn 1s";
+    episodeContainer.style.animation = "fadeIn 1s";
     setTimeout(() => {
       episodeContainer.style.display = "flex";
-
+      h1.style.visibility = "visible";
       modal.style.display = "none";
     }, 900);
   };
