@@ -27,17 +27,57 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent */
 }
 nav {
-  visibility: visible;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: #000000cb;
+  height: 50px;
+}
+.navBarContainer {
   width: 100%;
 }
+input {
+  visibility: hidden;
+}
 .navBar {
+  position: absolute;
+  top: 50px;
+  left: -110px;
+  padding: 10px;
   display: flex;
-  background-color: #0000004b;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  background-color: #000000cb;
+  transition: left 0.3s ease-in-out;
 }
+.navBarSlide {
+  left: 0;
+}
+.navBarSlide2 {
+  left: -110px;
+}
+.spans {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+}
+.spanContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.spanBorder1,
+.spanBorder2,
+.spanBorder3 {
+  border-radius: 5px;
+  width: 20px;
+  border: 2px solid white;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -225,6 +265,7 @@ button {
 }
 
 h1 {
+  margin-top: 20px;
   visibility: hidden;
   font-size: 2em;
   letter-spacing: 0.3rem;

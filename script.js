@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Erreur de chargement du JSON :", error));
 });
-
+const spansBtn = document.getElementById("spansBtn");
+spansBtn.addEventListener("click", () => {
+  document.getElementById("menuBg").classList.toggle("navBarSlide");
+});
 function displaySaisons(saisons) {
   const containerSaison = document.getElementById("saisons-container");
 
@@ -33,18 +36,13 @@ function displaySaisons(saisons) {
       setTimeout(() => {
         saisonCard.style.animation = "fadeIn 1s";
         saisonCard.style.display = "flex";
-        saisonBtn.style.visibility = "hidden";
-        accueilBtn.style.visibility = "hidden";
         h1.style.animation = "fadeIn 1s";
         h1.style.visibility = "visible";
-        nav.style.visibility = "hidden";
         footer.style.visibility = "visible";
         footerP.style.visibility = "visible";
       }, 500);
+      document.getElementById("menuBg").classList.add("navBarSlide2");
       document.body.classList.add("blurBg");
-      nav.style.animation = "fadeOut 1s";
-      accueilBtn.style.animation = "fadeOut 1s";
-      saisonBtn.style.animation = "fadeOut 1s";
     });
 
     accueilBtn.addEventListener("click", () => {
@@ -146,7 +144,6 @@ function openModal(episode) {
 
   document.querySelector(".close").onclick = () => {
     modal.style.animation = "fadeOut 1s";
-
     setTimeout(() => {
       episodeContainer.style.display = "flex";
 
