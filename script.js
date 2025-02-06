@@ -29,12 +29,13 @@ function displaySaisons(saisons) {
     const saisonBtn = document.getElementById("saisonBtn");
     const accueilBtn = document.getElementById("accueilBtn");
     const footer = document.querySelector("footer");
-    const nav = document.querySelector("nav");
+    const main = document.querySelector("main");
 
     const footerP = document.getElementById("footerP");
     h1.innerText = "Liste des Saisons";
     saisonBtn.addEventListener("click", () => {
       setTimeout(() => {
+        main.style.display = "flex";
         saisonCard.style.animation = "fadeIn 1s";
         saisonCard.style.display = "flex";
         h1.style.animation = "fadeIn 1s";
@@ -78,16 +79,21 @@ let h1 = document.querySelector("h1");
 
 function displayEpisodes(episodes) {
   const container = document.getElementById("episodes-container");
-  container.innerHTML = ""; // Clear the previous episodes
   let btnReturn = document.createElement("button");
+  container.innerHTML = ""; // Vider le container avec les épisodes
+
   container.appendChild(btnReturn);
   btnReturn.classList.add("btnReturn");
+
   episodes.forEach((episode) => {
     const episodeCard = document.createElement("div");
     episodeCard.classList.add("episode-card");
     episodeCard.innerHTML = `<h3>${episode.titre}</h3>  Episode ${episode.episode}</p>`;
     episodeContainer.style.display = "flex";
+    container.appendChild(episodeCard);
+
     // Ajouter un événement pour ouvrir le modal avec l'épisode
+
     episodeCard.addEventListener("click", () => {
       const episodeModal = document.getElementById("episodeModal");
       episodeModal.style.animation = "fadeIn 1s";
@@ -99,13 +105,13 @@ function displayEpisodes(episodes) {
         openModal(episode);
       }, 800);
     });
+
     btnReturn.addEventListener("click", () => {
       document.body.classList.add("blurBg");
       episodeContainer.style.animation = "fadeOut 1s";
-      h1.style.animation = "fadeOut 1s";
-      h1.style.visibility = "hidden";
-
+      h1.style.animation = "fadein .5s";
       setTimeout(() => {
+        h1.style.visibility = "visible";
         episodeContainer.style.display = "none";
         document.getElementById("saisons-container").style.animation =
           "fadeIn 1s";
@@ -114,6 +120,7 @@ function displayEpisodes(episodes) {
         h1.innerText = "Liste des Saisons";
       }, 800);
     });
+
     btnReturn.addEventListener("dblclick", () => {
       episodeContainer.style.animation = "fadeOut 2s";
       h1.style.animation = "fadeOut 1s";
@@ -122,7 +129,6 @@ function displayEpisodes(episodes) {
         window.location.reload();
       }, 700);
     });
-    container.appendChild(episodeCard);
   });
 }
 
