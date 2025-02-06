@@ -172,7 +172,18 @@ function openModal(episode) {
     }, 900);
   };
 }
+
 const logoGot = document.getElementById("logoGot");
 logoGot.addEventListener("click", () => {
   window.open("https://fr.wikipedia.org/wiki/Game_of_Thrones", "_blank");
+});
+
+const logoId = document.getElementById("logoId");
+const connected = document.getElementById("connected");
+logoId.addEventListener("click", () => {
+  connected.style.display = "flex";
+  connected.style.animation = "fadeInOut 1s";
+  setTimeout(() => {
+    connected.style.display = "none";
+  }, 900);
 });
