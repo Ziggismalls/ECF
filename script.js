@@ -42,9 +42,9 @@ function displaySaisons(saisons) {
         h1.style.visibility = "visible";
         footer.style.visibility = "visible";
         footerP.style.visibility = "visible";
+        document.body.classList.add("blurBg");
       }, 500);
       menuBg.classList.remove("navBarSlide");
-      document.body.classList.add("blurBg");
     });
 
     accueilBtn.addEventListener("click", () => {

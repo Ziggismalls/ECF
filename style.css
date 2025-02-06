@@ -33,11 +33,30 @@ body {
 nav {
   position: fixed;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: #000000e3;
   height: 50px;
 }
-
+.logoId {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+.fa-user {
+  font-size: 1.5em;
+  color: white;
+}
+.logoGot {
+  height: 50px;
+  width: 50px;
+}
+.logoGot img {
+  width: 100%;
+  height: 100%;
+}
 input {
   visibility: hidden;
 }
@@ -89,6 +108,7 @@ main {
   padding: 40px;
 }
 footer {
+  background-color: #000000e3;
   visibility: hidden;
   padding: 20px;
 }
@@ -102,7 +122,7 @@ footer {
 }
 a {
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 @keyframes fadeIn {
   0% {
@@ -118,6 +138,22 @@ a {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -253,7 +289,9 @@ a {
   justify-content: center;
   gap: 10px;
 }
-
+.carousel-Img {
+  overflow: hidden;
+}
 .carousel img {
   border-radius: 5px;
   width: 300px;
@@ -283,22 +321,37 @@ h1 {
   nav {
     height: 80px;
   }
-
+  a {
+    font-size: 1.2em;
+  }
   .spanBorder1,
   .spanBorder2,
   .spanBorder3 {
     width: 30px;
     border: 3px solid white;
   }
+  .spans {
+    display: none;
+  }
+
+  .logoGot {
+    width: 80px;
+    height: 80px;
+    margin-left: 44px;
+  }
+  .fa-user {
+    font-size: 2em;
+    color: white;
+  }
   .navBar {
-    top: 80px;
-    left: -150px;
-    height: 96px;
-    font-size: 1.5em;
-  }
-  .navBarSlide {
+    position: absolute;
+    top: 5px;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
   }
+
   h1 {
     margin-top: 100px;
     width: 70%;
@@ -330,6 +383,15 @@ h1 {
     padding: 50px;
     width: 70%;
   }
+  .navBar {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+  }
+
   .saison-card {
     width: 350px;
     height: 520px;
@@ -359,5 +421,22 @@ h1 {
     left: -40px;
     bottom: -25px;
     font-size: 3em;
+  }
+
+  /* Animation pour transformer en X */
+  .spans span {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .spans:hover .spanBorder1 {
+    transform: translateX(15px);
+  }
+
+  .spans:hover .spanBorder3 {
+    transform: translateX(-15px);
+  }
+
+  .spans:hover .spanBorder2 {
+    opacity: 0;
   }
 }
