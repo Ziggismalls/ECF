@@ -34,6 +34,7 @@ function displaySaisons(saisons) {
     const footerP = document.getElementById("footerP");
     h1.innerText = "Liste des Saisons";
     saisonBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       setTimeout(() => {
         main.style.display = "flex";
         saisonCard.style.animation = "fadeIn 1s";
@@ -56,6 +57,7 @@ function displaySaisons(saisons) {
 
     // Ajouter un événement pour afficher les épisodes
     saisonCard.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       containerSaison.style.animation = "fadeOut 1s";
       h1.style.animation = "fadeOut 1s";
       document.body.classList.add("blurBg");
@@ -95,6 +97,7 @@ function displayEpisodes(episodes) {
     // Ajouter un événement pour ouvrir le modal avec l'épisode
 
     episodeCard.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       const episodeModal = document.getElementById("episodeModal");
       episodeModal.style.animation = "fadeIn 1s";
       h1.style.animation = "fadeOut 1s";

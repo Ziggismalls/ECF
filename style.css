@@ -116,7 +116,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 5vh;
   width: 100%;
   color: white;
 }
@@ -166,6 +166,9 @@ a {
   align-items: center;
   justify-content: space-around;
   gap: 15px;
+}
+#episodes-container {
+  justify-content: center;
 }
 .saison-card {
   position: relative;
@@ -369,12 +372,10 @@ h1 {
     width: 400px;
     height: 200px;
   }
-  .modal-content {
-    width: 60%;
-  }
+
   .carousel img {
-    width: 400px;
-    height: 265px;
+    width: 300px;
+    height: 200px;
   }
 }
 
@@ -405,9 +406,7 @@ h1 {
     width: 400px;
     height: 200px;
   }
-  .modal-content {
-    width: 80%;
-  }
+
   #modal-title {
     font-size: 2.5rem;
   }
