@@ -169,3 +169,7 @@ function openModal(episode) {
     }, 900);
   };
 }
+const logoGot = document.getElementById("logoGot");
+logoGot.addEventListener("click", () => {
+  window.open("https://fr.wikipedia.org/wiki/Game_of_Thrones", "_blank");
+});

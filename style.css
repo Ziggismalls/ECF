@@ -338,6 +338,7 @@ h1 {
     width: 80px;
     height: 80px;
     margin-left: 44px;
+    cursor: pointer;
   }
   .fa-user {
     font-size: 2em;
